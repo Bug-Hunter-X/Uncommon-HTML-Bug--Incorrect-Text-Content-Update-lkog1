@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    // Incorrect way to access the element: Using the element's text content directly
+    document.getElementById('myDiv').textContent = 'New text';
+
+    // Correct way to update the content of the element.
+    // We should append the new text to the element's innerHTML.
+    // document.getElementById('myDiv').innerHTML += 'New text'; 
+  </script>
+</body>
+</html>
